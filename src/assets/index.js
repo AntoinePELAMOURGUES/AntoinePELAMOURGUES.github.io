@@ -42,13 +42,14 @@ import coverhunt from "./company/coverhunt.png";
 import dcc from "./company/dcc.png";
 import kelhel from "./company/kelhel.png";
 import microverse from "./company/microverse.png";
-
+import rakuten from "./projects/rakuten.png";
 import komikult from "./projects/komikult.png";
 import leaderboard from "./projects/leaderboard.png";
 import math from "./projects/math-magicians.png";
 import movie from "./projects/movie-metro.png";
 import nyeusi from "./projects/nyeusi.png";
 import space from "./projects/space-hub.png";
+import presentation_API from "./projects/presentation_API.mp4";
 
 export {
   bwmap,
@@ -86,8 +87,10 @@ export {
   redux,
   tailwind,
   typescript,
+  presentation_API,
   komikult,
   leaderboard,
+  rakuten,
   math,
   movie,
   nyeusi,
