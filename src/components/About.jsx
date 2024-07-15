@@ -37,7 +37,7 @@ const About = () => {
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px] text-justify">
-        Enquêteur de police judiciaire spécialisé dans la criminalité organisée et les atteintes graves aux personnes, j'ai eu l'occasion de découvrir le monde des données après une formation d'analyste criminel. Rapidement à l'aise avec l'analyse des datas, j'ai souhaité approfondir mes connaissances et ainsi reprendre mes études. Après 18 mois de formation auprès de l'école Datascientest, partenaire de l'Ecole des Mines Paris | PSL, j'ai obtenu mon diplôme de niveau 7 intitulé Ingénieur / Chef de projet IA, spécialisé en tant qu'ingénieur Machine Learning. 
+        Enquêteur de police judiciaire spécialisé dans la lutte contre la criminalité organisée et les atteintes graves aux personnes, j'ai eu l'occasion de découvrir le monde des données après une formation d'analyste criminel. Rapidement à l'aise avec l'analyse des datas, j'ai souhaité approfondir mes connaissances et ainsi reprendre mes études. Après 18 mois de formation auprès de l'école Datascientest, partenaire de l'Ecole des Mines Paris | PSL, j'ai obtenu mon diplôme de niveau 7 intitulé Ingénieur / Chef de projet IA, spécialisé en tant qu'ingénieur Machine Learning. 
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
