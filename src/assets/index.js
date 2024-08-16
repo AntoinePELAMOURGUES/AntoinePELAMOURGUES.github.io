@@ -49,7 +49,6 @@ import math from "./projects/math-magicians.png";
 import movie from "./projects/movie-metro.png";
 import nyeusi from "./projects/nyeusi.png";
 import space from "./projects/space-hub.png";
-import presentation_API from "./projects/presentation_API.mp4";
 
 export {
   bwmap,
@@ -87,7 +86,6 @@ export {
   redux,
   tailwind,
   typescript,
-  presentation_API,
   komikult,
   leaderboard,
   rakuten,

@@ -20,9 +20,8 @@ const ProjectCard = ({
   return (
     <motion.div
       variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
-      className={`relative ${
-        active === id ? 'lg:flex-[3.5] flex-[10]' : 'lg:flex-[0.5] flex-[2]'
-      } flex items-center justify-center min-w-[170px] 
+      className={`relative ${active === id ? 'lg:flex-[3.5] flex-[10]' : 'lg:flex-[0.5] flex-[2]'
+        } flex items-center justify-center min-w-[170px] 
       h-[420px] cursor-pointer card-shadow`}
       onClick={() => handleClick(id)}>
       <div
@@ -114,17 +113,17 @@ const Projects = () => {
   const [active, setActive] = useState('project-2');
 
   return (
-    <div className="-mt-[6rem]">
+    <div className="-mt-[8rem]">
       <motion.div variants={textVariant()}>
         {/* <p className={`${styles.sectionSubText} `}>Case Studies</p> */}
-        <h2 className={`${styles.sectionHeadTextLight}`}>Projets.</h2>
+        <h2 className={`${styles.sectionHeadTextLight}`}>Mes Projets</h2>
       </motion.div>
 
       <div className="w-full flex">
         <motion.p
           variants={fadeIn('', '', 0.1, 1)}
-          className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
-          Ces projets démontrent mon expertise avec des exemples pratiques de certains de mes travaux. Ils démontrent ma capacité à relever des défis complexes, à m'adapter à diverses technologies et à superviser efficacement des projets.
+          className="mt-3 text-taupe text-[18px] max-w-3xl leading-[30px] text-justify">
+          Ces projets illustrent mon expertise à travers des exemples pratiques de certains de mes travaux. Ils mettent en avant ma capacité à relever des défis complexes, à m'adapter à diverses technologies et à superviser efficacement des projets.
         </motion.p>
       </div>
 

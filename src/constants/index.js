@@ -17,7 +17,6 @@ import {
   postgresql,
   rubyrails,
   graphql,
-  presentation_API,
   komikult,
   leaderboard,
   math,
@@ -37,8 +36,16 @@ export const navLinks = [
     title: "À propos",
   },
   {
+    id:"tech",
+    title:"Compétences"
+  },
+  {
     id: "projects",
     title: "Projets",
+  },
+  {
+    id: "experience",
+    title: "Expériences",
   },
   {
     id: "contact",
@@ -198,7 +205,7 @@ const projects = [
     ],
     image: rakuten,
     repo: "https://github.com/AntoinePELAMOURGUES/PROJET_CHALLENGE_RAKUTEN",
-    demo: presentation_API,
+    demo: "https://youtu.be/yrr4jtXSoes",
   },
   // {
   //   id: "project-3",

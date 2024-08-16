@@ -38,7 +38,7 @@ const Contact = () => {
           to_email: 'antoinepela@gmail.com', //put your email here.
           message: form.message,
         },
-        'yourpublickey' //paste your Public Key here. You'll get it in your profile section.
+        'kw-1ckoF23jpo9VUi' //paste your Public Key here. You'll get it in your profile section.
       )
       .then(
         () => {
@@ -66,15 +66,15 @@ const Contact = () => {
       <motion.div
         variants={slideIn('left', 'tween', 0.2, 1)}
         className="flex-[0.75] bg-jet p-8 rounded-2xl">
-        
-        <h3 className={styles.sectionHeadTextLight}>Me contacter.</h3>
+
+        <h3 className={styles.sectionHeadTextLight}>Me contacter</h3>
 
         <form
           ref={formRef}
           onSubmit={handleSubmit}
           className="mt-10 flex flex-col gap-6 font-poppins">
           <label className="flex flex-col">
-            <span className="text-timberWolf font-medium mb-4">Votre nom</span>
+            <span className="text-timberWolf font-medium mb-4 text-xl">Votre  nom</span>
             <input
               type="text"
               name="name"
@@ -84,11 +84,11 @@ const Contact = () => {
               className="bg-eerieBlack py-4 px-6
               placeholder:text-taupe
               text-timberWolf rounded-lg outline-none
-              border-none font-medium"
+              border-none font-medium text-xl"
             />
           </label>
           <label className="flex flex-col">
-            <span className="text-timberWolf font-medium mb-4">Votre e-mail</span>
+            <span className="text-timberWolf font-medium mb-4 text-xl">Votre  e-mail</span>
             <input
               type="email"
               name="email"
@@ -98,15 +98,15 @@ const Contact = () => {
               className="bg-eerieBlack py-4 px-6
               placeholder:text-taupe
               text-timberWolf rounded-lg outline-none
-              border-none font-medium"
+              border-none font-medium text-xl"
             />
           </label>
           <label className="flex flex-col">
-            <span className="text-timberWolf font-medium mb-4">
+            <span className="text-timberWolf font-medium mb-4 text-xl">
               Votre message
             </span>
             <textarea
-              rows="7"
+              rows="5"
               name="message"
               value={form.message}
               onChange={handleChange}
@@ -114,7 +114,7 @@ const Contact = () => {
               className="bg-eerieBlack py-4 px-6
               placeholder:text-taupe
               text-timberWolf rounded-lg outline-none
-              border-none font-medium resize-none"
+              border-none font-medium resize-none text-xl"
             />
           </label>
 
