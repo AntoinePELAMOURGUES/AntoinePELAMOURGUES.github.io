@@ -9,6 +9,7 @@ import { experiences } from '../constants';
 import { SectionWrapper } from '../hoc';
 import { download, downloadHover, resume } from '../assets';
 import { textVariant } from '../utils/motion';
+import notationsPDF from '../assets/personnal/notations.pdf';
 
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
@@ -100,12 +101,14 @@ const Experience = () => {
               sm:mt-[22px] mt-[16px] hover:bg-battleGray
               hover:text-eerieBlack transition duration-[0.2s]
               ease-in-out"
-              onClick={() =>
-                window.open(
-                  'resume link', //paste the link to your resume here
-                  '_blank'
-                )
-              }
+              onClick={() => {
+                const link = document.createElement('a');
+                link.href = notationsPDF;
+                link.download = 'notations.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}
               onMouseOver={() => {
                 document
                   .querySelector('.download-btn')
@@ -116,12 +119,12 @@ const Experience = () => {
                   .querySelector('.download-btn')
                   .setAttribute('src', download);
               }}>
-              MES DERNIÈRES NOTATIONS
+              MES NOTATIONS
               <img
-                src={"https://drive.google.com/file/d/1Fa7w1m5aO0JjHPNJJMaScrMZig-oV0vo/view?usp=sharing"}
+                src={download}
                 alt="download"
-                className="download-btn sm:w-[26px] sm:h-[26px]
-                w-[23px] h-[23px] object-contain"
+                className="download-btn sm:w-[65px] sm:h-[26px]
+                w-[50px] h-[23px] object-contain"
               />
             </button>
           </VerticalTimelineElement>
