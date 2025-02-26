@@ -119,12 +119,12 @@ const Experience = () => {
                   .querySelector('.download-btn')
                   .setAttribute('src', download);
               }}>
-              MES NOTATIONS
+              NOTATIONS
               <img
                 src={download}
                 alt="download"
-                className="download-btn sm:w-[65px] sm:h-[26px]
-                w-[50px] h-[23px] object-contain"
+                className="download-btn sm:w-[26px] sm:h-[26px]
+                w-[23px] h-[23px] object-contain"
               />
             </button>
           </VerticalTimelineElement>
