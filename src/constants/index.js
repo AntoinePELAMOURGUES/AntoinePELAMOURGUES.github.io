@@ -221,6 +221,13 @@ const projects = [
     image: leaderboard,
     repo: "https://www.canva.com/design/DAGg4AFFD4c/F3SzfWIef0WXsbcj9TBokA/view?utm_content=DAGg4AFFD4c&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3e1c27af5a",
   },
+  {
+    id: "project-4",
+    name: "Telephony-Insight",
+    description: "Visualisation des données téléphoniques à la Réunion",
+    image: nyeusi,
+    repo: "https://github.com/AntoinePELAMOURGUES/PROJET_TELEPHONY_INSIGHT",
+  },
   //   tags: [
   //     {
   //       name: "nextjs",
