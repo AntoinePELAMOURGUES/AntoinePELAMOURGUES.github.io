@@ -186,6 +186,13 @@ const projects = [
   //   demo: "https://shaqdeff.github.io/KomiKult/",
   // },
   {
+    id: "project-1",
+    name: "Recommandation de films",
+    description: "Prédiction de films et suivi constant des performances",
+    image: komikult,
+    repo: "https://github.com/AntoinePELAMOURGUES/PROJET_MLOPS_RECO_MOVIES",
+  },
+  {
     id: "project-2",
     name: "Rakuten",
     description: "Challenge Rakuten multimodal classification.",
@@ -207,10 +214,13 @@ const projects = [
     repo: "https://github.com/AntoinePELAMOURGUES/PROJET_CHALLENGE_RAKUTEN",
     demo: "https://youtu.be/yrr4jtXSoes",
   },
-  // {
-  //   id: "project-3",
-  //   name: "Math Magicians",
-  //   description: "This is a single-page calculator app built with React",
+  {
+    id: "project-3",
+    name: "Data Product Manager",
+    description: "Amélioration du système CartoFriches",
+    image: leaderboard,
+    repo: "https://www.canva.com/design/DAGg4AFFD4c/F3SzfWIef0WXsbcj9TBokA/view?utm_content=DAGg4AFFD4c&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3e1c27af5a",
+  },
   //   tags: [
   //     {
   //       name: "nextjs",

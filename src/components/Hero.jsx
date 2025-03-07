@@ -1,8 +1,6 @@
-import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
-import { styles } from '../styles';
-import { navLinks } from '../constants';
-import { shaq, bwmap, worldmap } from '../assets';
+import { motion } from "framer-motion";
+import { styles } from "../styles";
+import { shaq, bwmap, worldmap } from "../assets";
 
 const Hero = () => {
   return (
@@ -37,13 +35,13 @@ const Hero = () => {
           <div className="ml-0 sm:ml-4">
             <h1 className={`${styles.heroHeadText} text-eerieBlack font-poppins uppercase`}>
               Pelamourgues{' '}
-              <span className="sm:text-battleGray sm:text-[90px]
+              <span className="sm:text-battleGray sm:text-[80px]
                 text-eerieBlack text-[50px] font-mova
                 font-extrabold uppercase">
                 Antoine
               </span>
             </h1>
-            <p className={`${styles.heroSubText} mt-6 text-eerieBlack space-y-3`}> {/* Augmenté mt-4 à mt-6 et space-y-2 à space-y-3 */}
+            <p className={`${styles.heroSubText} mt-6 text-eerieBlack space-y-3`}>
               <span className="block">Ingénieur Machine Learning</span>
               <span className="block">Habite à Lyon</span>
               <span className="block">
@@ -87,14 +85,50 @@ const Hero = () => {
           </a>
         </div>
 
-        {/* Your image comes here. Feel free to remove image if you don't plan to have one.*/}
-        <div>
+        {/* Conteneur image + cercle */}
+        <div
+          className="absolute"
+          style={{
+            right: "100px",
+            top: "50%",
+            transform: "translateY(-50%)",
+            zIndex: 10
+          }}
+        >
+          {/* Cercle rotatif */}
+          <motion.div
+            className="absolute"
+            style={{
+              width: "330px",
+              height: "330px",
+              borderRadius: "50%",
+              border: "4px solid transparent",
+              borderTopColor: "#c7c6c6",
+              top: "-4%",
+              left: "-4%",
+              transform: "translate(-50%, -50%)"
+            }}
+            animate={{
+              rotate: [0, 360]
+            }}
+            transition={{
+              duration: 4, // Augmentez cette valeur pour ralentir la rotation
+              repeat: Infinity,
+              ease: "linear"
+            }}
+          />
+
+          {/* Image */}
           <img
-            className="absolute bottom-[0px] ml-[50vw]
-            lg:ml-[75vw] md:ml-[60vw] xmd:ml-[60vw] 2xl:ml-[83vw]
-            sm:h-[100vh] md:h-[80vh] xl:h-[90vh] transform -translate-x-20"
             src={shaq}
             alt="antoine"
+            className="relative"
+            style={{
+              width: "300px",
+              height: "300px",
+              borderRadius: "50%",
+              display: "block"
+            }}
           />
         </div>
       </section>
