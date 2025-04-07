@@ -64,7 +64,7 @@ const Hero = () => {
 
         <div
           className="absolute xs:bottom-10 bottom-32 w-full
-          flex justify-center items-center">
+          flex justify-center items-center hidden-on-small-screens">
           <a href="#about">
             <div
               className="w-[35px] h-[64px] rounded-3xl border-4
@@ -87,7 +87,7 @@ const Hero = () => {
 
         {/* Conteneur image + cercle */}
         <div
-          className="absolute"
+          className="absolute hidden-on-small-screens"
           style={{
             right: "100px",
             top: "50%",
