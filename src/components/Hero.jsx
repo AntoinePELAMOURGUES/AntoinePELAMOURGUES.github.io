@@ -46,7 +46,7 @@ const Hero = () => {
               <span className="block">Habite à Lyon</span>
               <span className="block">
                 <i className="fa fa-phone" aria-hidden="true"></i>&nbsp;
-                06.93.53.25.52
+                06.51.38.98.38
               </span>
               <span className="block">
                 <i className="fa fa-envelope" aria-hidden="true"></i>&nbsp;
