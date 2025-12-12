@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
-import { bwmap, worldmap } from '../assets';
+import { bwmap } from '../assets';
 
 const Hero = () => {
   return (
@@ -12,13 +12,6 @@ const Hero = () => {
           alt="world map"
           className="w-full h-full sm:block hidden object-cover opacity-80" 
           // J'ai ajouté opacity-80 pour assombrir un peu le fond et faire ressortir le texte
-        />
-      </div>
-      <div className="absolute top-0 left-0 z-0 h-[100vh] w-screen">
-        <img
-          src={worldmap}
-          alt="world map"
-          className="w-full h-full sm:hidden block object-cover opacity-80"
         />
       </div>
 
