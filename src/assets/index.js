@@ -22,6 +22,10 @@ import menu from "./icons/menu.png";
 import resume from "./icons/resume.png";
 import send from "./icons/send.png";
 import sendHover from "./icons/sendHover.png";
+import cloudIcon from "./icons/cloud.png"; // Adapte le chemin
+import dbIcon from "./icons/database.png";
+import engIcon from "./icons/engineering.png";
+import leadIcon from "./icons/leadership.png"; 
 
 import css from "./tech/bash.png";
 import docker from "./tech/docker.png";
@@ -51,6 +55,10 @@ import nyeusi from "./projects/nyeusi.png";
 import space from "./projects/space-hub.png";
 
 export {
+  cloudIcon,
+  dbIcon,
+  engIcon,
+  leadIcon,
   bwmap,
   nairobi,
   whiteabstract,
@@ -96,8 +104,10 @@ export {
   dcc,
   kelhel,
   microverse,
+  
 
 };
+
 
 
 
