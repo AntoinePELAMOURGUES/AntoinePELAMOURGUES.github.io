@@ -154,32 +154,54 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Sous-officier Armée de Terre",
-    company_name: "Regiment de Transmissions",
-    icon: coverhunt,
+    title: "Lead Cloud Consultant / Data Project Lead",
+    company_name: "Freelance / Datascientest",
+    icon: dcc, // Assure-toi que c'est une icône "Tech"
     iconBg: "#333333",
-    date: "Sep 2004 - Oct 2010",
+    date: "Jan 2024 - Aujourd'hui",
+    points: [
+      "Conception d'architectures Modern Data Stack (Snowflake, dbt, AWS) pour le traitement de données massives.",
+      "Pilotage de projets Data de bout en bout : de la définition des besoins métiers (Stakeholder Management) au déploiement en production.",
+      "Développement de pipelines ETL/ELT robustes et industrialisation de modèles de Machine Learning (MLOps).",
+      "Certification Snowflake SnowPro Core & AWS Cloud Practitioner.",
+    ],
   },
   {
-    title: "Enquêteur police judiciaire",
-    company_name: "Gendarmerie",
+    title: "Chef de Groupe d'Investigation (Lead)",
+    company_name: "Gendarmerie Nationale (PJ)",
+    icon: kelhel, // Assure-toi que c'est une icône "Gendarmerie"
+    iconBg: "#333333",
+    date: "Jan 2018 - Déc 2023",
+    points: [
+      "Management opérationnel d'une unité d'élite (10-20 enquêteurs) : Gestion de crise, pilotage des priorités et coordination des équipes.",
+      "Supervision d'analyses criminelles complexes : Traitement de données non structurées (téléphonie, bancaire) pour identifier des réseaux criminels.",
+      "Vulgarisation technique : Présentation de rapports stratégiques aux magistrats et décideurs administratifs.",
+      "Mise en place de nouvelles méthodologies d'investigation numérique (OSINT, Analyse relationnelle).",
+    ],
+  },
+  {
+    title: "Enquêteur Police Judiciaire & Analyste",
+    company_name: "Gendarmerie Nationale",
     icon: microverse,
     iconBg: "#333333",
-    date: "Oct 2010 - Aujourd'hui",
+    date: "Oct 2010 - Déc 2017",
+    points: [
+      "Conduite d'enquêtes judiciaires sensibles : Rigueur procédurale, collecte de preuves et auditions.",
+      "Spécialisation en Analyse Criminelle : Utilisation de SQL et d'outils de visualisation (I2 Analyst Notebook) pour résoudre des affaires froides (Cold Cases).",
+      "Gestion de la donnée judiciaire : Nettoyage, structuration et exploitation de bases de données hétérogènes.",
+    ],
   },
   {
-    title: "Analyste criminel",
-    company_name: "Gendarmerie",
-    icon: kelhel,
+    title: "Chef de Groupe Transmissions (Sous-officier)",
+    company_name: "Armée de Terre",
+    icon: coverhunt, // Icône Armée
     iconBg: "#333333",
-    date: "Jan 2018 - Aujourd'hui",
-  },
-  {
-    title: "Ingénieur Machine Learning",
-    company_name: "",
-    icon: dcc,
-    iconBg: "#333333",
-    date: "Avr 2025 - Aujourd'hui",
+    date: "Sep 2004 - Oct 2010",
+    points: [
+      "Commandement d'équipe en environnement contraint et opérations extérieures.",
+      "Déploiement et maintenance de systèmes d'information et de communication sécurisés.",
+      "Formation et encadrement technique des jeunes recrues.",
+    ],
   },
 ];
 
