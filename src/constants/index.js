@@ -1,4 +1,8 @@
 import {
+  cloudIcon,
+  dbIcon,
+  engIcon,
+  leadIcon,
   frontend,
   backend,
   ux,
@@ -55,20 +59,20 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Modélisation",
-    icon: frontend,
+    title: "Lead Cloud Consultant",
+    icon: cloudIcon,
   },
   {
-    title: "Ingénierie",
-    icon: backend,
+    title: "Snowflake & AWS Architect",
+    icon: dbIcon,
   },
   {
-    title: "Gouvernance Déontologie",
-    icon: ux,
+    title: "Data Engineering",
+    icon: engIcon,
   },
   {
-    title: "Communication Collaboration",
-    icon: prototyping,
+    title: "Leadership & Stratégie",
+    icon: leadIcon,
   },
 ];
 
