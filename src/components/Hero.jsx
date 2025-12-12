@@ -1,17 +1,27 @@
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
-import { bwmap } from '../assets';
+import { bwmap } from '../assets'; 
+// Note: On n'importe que bwmap car on va l'utiliser partout
 
 const Hero = () => {
   return (
     <>
-      {/* --- BACKGROUND MAPS --- */}
+      {/* --- BACKGROUND IMAGES --- */}
       <div className="absolute top-0 left-0 z-0 h-[100vh] w-screen">
+        
+        {/* IMAGE BUREAU (Desktop) */}
         <img
-          src={bwmap}
-          alt="world map"
+          src={bwmap} // Ton image Snowflake
+          alt="background snowflake"
           className="w-full h-full sm:block hidden object-cover opacity-80" 
-          // J'ai ajouté opacity-80 pour assombrir un peu le fond et faire ressortir le texte
+        />
+        
+        {/* IMAGE MOBILE */}
+        {/* J'utilise aussi bwmap ici pour que tu aies le fond snowflake sur mobile aussi */}
+        <img
+          src={bwmap} 
+          alt="background snowflake mobile"
+          className="w-full h-full sm:hidden block object-cover opacity-80"
         />
       </div>
 
@@ -19,14 +29,13 @@ const Hero = () => {
       <section className="relative flex w-full h-screen mx-auto overflow-hidden justify-center items-center">
         
         {/* --- CENTRAL CARD CONTAINER --- */}
-        {/* Ce bloc crée un fond noir semi-transparent pour garantir la lisibilité */}
         <div className="z-10 bg-black/60 backdrop-blur-sm p-8 sm:p-12 rounded-2xl shadow-2xl border border-gray-700 max-w-5xl mx-4 flex flex-col items-center text-center">
             
             {/* NAME */}
             <h1 className={`${styles.heroHeadText} text-white font-poppins uppercase tracking-tighter`}>
               Pelamourgues{' '}
               <span className="text-[#915eff] sm:text-[80px] text-[50px] font-mova font-extrabold uppercase drop-shadow-lg">
-                Antoine {/* J'ai mis une couleur accent (violet tech) ou tu peux mettre 'text-white' si tu préfères tout blanc */}
+                Antoine
               </span>
             </h1>
 
@@ -36,7 +45,6 @@ const Hero = () => {
                 Lead Cloud Consultant <span className="text-[#915eff]">|</span> Snowflake & AWS
               </h2>
               
-              {/* Ligne séparatrice horizontale */}
               <div className="w-24 h-1 bg-[#915eff] rounded-full my-2"></div>
 
               <p className="text-[16px] sm:text-[20px] italic leading-relaxed text-gray-300 max-w-3xl">
@@ -45,7 +53,6 @@ const Hero = () => {
               </p>
 
               {/* TECH STACK BADGES */}
-              {/* Badges Blancs/Gris pour ressortir sur le fond noir */}
               <div className="flex flex-wrap justify-center gap-3 mt-6 mb-6">
                 {['Snowflake', 'dbt', 'AWS', 'Python', 'Docker'].map((tech) => (
                   <span key={tech} className="bg-white/10 border border-white/20 text-white py-2 px-4 rounded-full text-[14px] font-medium tracking-wide hover:bg-white/20 transition-all">
