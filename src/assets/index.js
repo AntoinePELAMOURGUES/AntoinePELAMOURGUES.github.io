@@ -25,7 +25,7 @@ import sendHover from "./icons/sendHover.png";
 import cloudIcon from "./icons/cloud.png"; // Adapte le chemin
 import dbIcon from "./icons/database.png";
 import engIcon from "./icons/engineering.png";
-import leadIcon from "./icons/leadership.png"; 
+import leadIcon from "./icons/leadership.png";
 
 import bash from "./tech/bash.png";
 import docker from "./tech/docker.png";
@@ -53,6 +53,7 @@ import math from "./projects/math-magicians.png";
 import movie from "./projects/movie-metro.png";
 import nyeusi from "./projects/nyeusi.png";
 import space from "./projects/space-hub.png";
+import telephony from "./projects/telephony.png";
 
 export {
   cloudIcon,
@@ -104,9 +105,10 @@ export {
   dcc,
   kelhel,
   microverse,
-  
+  telephony, 
 
 };
+
 
 
 
