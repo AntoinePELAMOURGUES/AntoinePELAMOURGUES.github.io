@@ -98,7 +98,7 @@ const technologies = [
     icon: snowflake,
   },
   {
-    name: "dbt",
+    name: "Data Build Tools",
     icon: dbt,
   },
   {
@@ -106,7 +106,7 @@ const technologies = [
     icon: amazon,
   },
   {
-    name: "python",
+    name: "Python",
     icon: python,
   },
   {
@@ -134,15 +134,15 @@ const technologies = [
     icon: jenkins,
   },
   {
-    name: "streamlit",
+    name: "Streamlit",
     icon: streamlit,
   },
   {
-    name: "git",
+    name: "Git",
     icon: git,
   },
   {
-    name: "tensorflow",
+    name: "Tensorflow",
     icon: tensorflow,
   },
   {
