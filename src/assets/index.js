@@ -53,7 +53,6 @@ export {
   bwmap,
   nairobi,
   whiteabstract,
-  worldmap,
   logo,
   logotext,
   shaq,
@@ -98,3 +97,4 @@ export {
   microverse,
 
 };
+
