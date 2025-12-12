@@ -1,4 +1,5 @@
 import {
+  telephony,
   cloudIcon,
   dbIcon,
   engIcon,
@@ -207,26 +208,40 @@ const projects = [
   // },
   {
     id: "project-1",
-    name: "Recommandation de films",
-    description: "Prédiction de films et suivi constant des performances",
-    image: komikult,
-    repo: "https://github.com/AntoinePELAMOURGUES/PROJET_MLOPS_RECO_MOVIES",
+    name: "Telephony-Insights",
+    description: "Architecture Modern Data Stack (ELT) pour l'analyse industrielle de données téléphoniques judiciaires. Ingestion AWS, Warehousing Snowflake et transformations via dbt.",
+    tags: [
+      {
+        name: "snowflake",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "dbt",
+        color: "pink-text-gradient", // dbt est souvent associé à l'orange/rose
+      },
+      {
+        name: "aws",
+        color: "green-text-gradient",
+      },
+    ],
+    image: telephony, // Assure-toi que cette variable correspond bien à ton image "Telephony"
+    demo: "https://www.linkedin.com/feed/update/urn:li:activity:7399790300069822465/", // Si pas de démo live, remet le repo ou un lien vers une vidéo
   },
   {
     id: "project-2",
-    name: "Rakuten",
-    description: "Challenge Rakuten multimodal classification.",
+    name: "Rakuten MLOps",
+    description: "Industrialisation d'un moteur de classification multimodal (Texte/Image). Architecture Micro-services, conteneurisation Docker et déploiement Cloud.",
     tags: [
       {
         name: "tensorflow",
         color: "blue-text-gradient",
       },
       {
-        name: "fastapi",
+        name: "kubernetes",
         color: "green-text-gradient",
       },
       {
-        name: "streamlit",
+        name: "fastapi",
         color: "pink-text-gradient",
       },
     ],
@@ -236,17 +251,45 @@ const projects = [
   },
   {
     id: "project-3",
-    name: "Data Product Manager",
-    description: "Amélioration du système CartoFriches",
-    image: leaderboard,
-    repo: "https://www.canva.com/design/DAGg4AFFD4c/F3SzfWIef0WXsbcj9TBokA/view?utm_content=DAGg4AFFD4c&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3e1c27af5a",
+    name: "Movie Recommender",
+    description: "Système de recommandation de films End-to-End. De l'entraînement du modèle au monitoring des performances en production (Drift detection).",
+    tags: [
+      {
+        name: "scikit-learn",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mlflow",
+        color: "green-text-gradient",
+      },
+      {
+        name: "docker",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: komikult, // Variable image à vérifier
+    repo: "https://github.com/AntoinePELAMOURGUES/PROJET_MLOPS_RECO_MOVIES",
   },
   {
     id: "project-4",
-    name: "Telephony-Insight",
-    description: "Visualisation des données téléphoniques à la Réunion",
-    image: nyeusi,
-    repo: "https://github.com/AntoinePELAMOURGUES/PROJET_TELEPHONY_INSIGHT",
+    name: "CartoFriches (Data PM)",
+    description: "Stratégie produit pour la valorisation de l'Open Data foncier. Définition des KPI, User Stories et roadmap pour l'aide à la décision publique.",
+    tags: [
+      {
+        name: "product-mgmt",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "open-data",
+        color: "green-text-gradient",
+      },
+      {
+        name: "kpi",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: leaderboard, // Variable image à vérifier
+    repo: "https://www.canva.com/design/DAGg4AFFD4c/F3SzfWIef0WXsbcj9TBokA/view",
   },
   //   tags: [
   //     {
