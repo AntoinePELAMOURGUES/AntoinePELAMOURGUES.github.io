@@ -7,6 +7,7 @@ import logo from "./logo/logo_antoine.png";
 import logotext from "./logo/logo-text-black.png";
 
 import shaq from "./personal/antoine_1.png";
+import cv from "./personal/CV_Antoine_Pelamourgues_Lead_Data_Consultant.pdf"
 
 import backend from "./icons/ingenierie.png";
 import ux from "./icons/gouvernement.png";
@@ -56,6 +57,7 @@ import space from "./projects/space-hub.png";
 import telephony from "./projects/telephony.png";
 
 export {
+  cv
   cloudIcon,
   dbIcon,
   engIcon,
@@ -108,6 +110,7 @@ export {
   telephony, 
 
 };
+
 
 
 
