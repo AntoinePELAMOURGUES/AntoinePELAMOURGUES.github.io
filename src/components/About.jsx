@@ -32,14 +32,13 @@ const About = () => {
   return (
     <div className="-mt-[6rem]">
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>MON PARCOURS</p>
-        <h2 className={`${styles.sectionHeadText} text-eerieBlack`}>À Propos.</h2>
+        <h2 className={`${styles.sectionHeadText} text-eerieBlack`}>MON PARCOURS</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
         // ICI : Couleur gris foncé (#5c5c5c) pour être lisible sur le BLANC
-        className="mt-4 text-[#5c5c5c] text-[18px] max-w-3xl leading-[30px] text-justify">
+        className="mt-4 text-[#5c5c5c] text-[18px] max-w-6xl leading-[30px] text-justify">
         
         {/* Titre en gras et noir */}
         <span className='font-extrabold text-black text-[20px] block mb-4'>
