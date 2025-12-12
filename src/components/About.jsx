@@ -16,9 +16,11 @@ const ServiceCard = ({ index, title, icon }) => {
           scale: 1,
           speed: 450,
         }}
+        // Si tes cartes sont sur fond foncé, garde bg-jetLight et text-white.
+        // Si tu veux des cartes claires, change bg-jetLight par bg-white et le texte en noir.
         className="bg-jetLight rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
         <img src={icon} alt={title} className="w-16 h-16 object-contain" />
-        <h3 className="text-taupe text-[18px] font-bold text-center">
+        <h3 className="text-white text-[20px] font-bold text-center">
           {title}
         </h3>
       </div>
@@ -28,19 +30,32 @@ const ServiceCard = ({ index, title, icon }) => {
 
 const About = () => {
   return (
-    <div className="-mt-[8rem]">
+    <div className="-mt-[6rem]">
       <motion.div variants={textVariant()}>
-        {/* <p className={styles.sectionSubText}>Introduction</p> */}
-        <h2 className={styles.sectionHeadText}>Introduction</h2>
+        <p className={styles.sectionSubText}>MON PARCOURS</p>
+        <h2 className={`${styles.sectionHeadText} text-eerieBlack`}>À Propos.</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
-        className="mt-3 text-[#5c5c5c] text-[18px] leading-[30px] text-justify">
-        Passionné par l'analyse des données, j'ai transformé ma carrière d'enquêteur de police judiciaire en un parcours dédié à l'ingénierie des données. Spécialisé dans la lutte contre la criminalité organisée et les atteintes graves aux personnes, j'ai découvert le monde des données après une formation d'analyste criminel. Rapidement à l'aise avec le traitement des datas, j'ai souhaité approfondir mes connaissances et reprendre mes études. Après 18 mois de formation auprès de l'école Datascientest, partenaire de l'École des Mines Paris | PSL, j'ai obtenu mon diplôme de niveau 7 intitulé Ingénieur / Chef de projet IA, spécialisé en tant qu'ingénieur Machine Learning. Au cours de cette formation, j'ai acquis des compétences solides en machine learning, notamment dans l'utilisation de bibliothèques telles que TensorFlow et Scikit-learn, ainsi que dans la mise en œuvre de modèles de classification et de régression. Je suis déterminé à utiliser mes compétences en machine learning pour résoudre des problèmes complexes et contribuer à des projets innovants.
+        // ICI : Couleur gris foncé (#5c5c5c) pour être lisible sur le BLANC
+        className="mt-4 text-[#5c5c5c] text-[18px] max-w-3xl leading-[30px] text-justify">
+        
+        {/* Titre en gras et noir */}
+        <span className='font-extrabold text-black text-[20px] block mb-4'>
+          De l'investigation criminelle à l'architecture Data.
+        </span>
+
+        Mon profil est atypique, et c'est ma plus grande force. Pendant 13 ans en tant que <strong>Chef de groupe PJ (Gendarmerie)</strong>, j'ai piloté des investigations complexes où la précision de l'information était vitale.
+        <br /><br />
+        Aujourd'hui, j'ai transposé cette rigueur analytique et ce leadership opérationnel vers le <strong>Cloud Computing</strong> et le <strong>Data Engineering</strong>.
+        Je ne me contente pas de coder : je structure, je sécurise et je valorise la donnée pour la rendre intelligible.
+        <br /><br />
+        Expert certifié <strong>Snowflake</strong> et <strong>AWS</strong>, je combine une maîtrise technique de la "Modern Data Stack" avec une capacité éprouvée à gérer des équipes et des projets critiques. Mon objectif ? Transformer vos données brutes en décisions stratégiques.
       </motion.p>
 
-      <div className="mt-10 flex flex-wrap gap-10">
+      {/* Les cartes de compétences */}
+      <div className="mt-20 flex flex-wrap gap-10 justify-center">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
