@@ -1,4 +1,4 @@
-import bwmap from "./backgrounds/snowflake-bg.png";
+import bwmap from "./backgrounds/snowflake_backgroung.jpg";
 import nairobi from "./backgrounds/nairobi.png";
 import whiteabstract from "./backgrounds/white-abstract.png";
 
@@ -98,5 +98,6 @@ export {
   microverse,
 
 };
+
 
 
