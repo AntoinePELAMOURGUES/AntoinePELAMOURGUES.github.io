@@ -1,6 +1,7 @@
-import bwmap from "./backgrounds/world-map.png";
+import bwmap from "./backgrounds/snowflake-bg.png";
 import nairobi from "./backgrounds/nairobi.png";
 import whiteabstract from "./backgrounds/white-abstract.png";
+
 
 import logo from "./logo/logo_antoine.png";
 import logotext from "./logo/logo-text-black.png";
@@ -97,4 +98,5 @@ export {
   microverse,
 
 };
+
 
