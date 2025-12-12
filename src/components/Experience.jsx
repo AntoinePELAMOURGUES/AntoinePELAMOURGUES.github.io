@@ -7,9 +7,8 @@ import 'react-vertical-timeline-component/style.min.css';
 import { styles } from '../styles';
 import { experiences } from '../constants';
 import { SectionWrapper } from '../hoc';
-import { download, downloadHover, resume } from '../assets';
+import { download, downloadHover, resume, cv } from '../assets';
 import { textVariant } from '../utils/motion';
-import notationsPDF from '../assets/personal/notations.pdf';
 
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
@@ -49,6 +48,18 @@ const ExperienceCard = ({ experience }) => (
         {experience.company_name}
       </p>
     </div>
+
+    {/* AJOUT : Affichage des bullet points (C'était manquant) */}
+    <ul className='mt-5 list-disc ml-5 space-y-2'>
+      {experience.points.map((point, index) => (
+        <li
+          key={`experience-point-${index}`}
+          className='text-taupe-100 text-[14px] pl-1 tracking-wider font-poppins'
+        >
+          {point}
+        </li>
+      ))}
+    </ul>
   </VerticalTimelineElement>
 );
 
@@ -56,11 +67,11 @@ const Experience = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        {/* <p className={`${styles.sectionSubText} sm:pl-16 pl-[2rem]`}>
-          What I've done so far */}
-        {/* </p> */}
+        <p className={`${styles.sectionSubText} sm:pl-16 pl-[2rem]`}>
+           Mon parcours professionnel
+        </p>
         <h2 className={`${styles.sectionHeadText} sm:pl-16 pl-[2rem]`}>
-          Mes Expériences Professionnelles
+          Expériences.
         </h2>
       </motion.div>
 
@@ -69,6 +80,8 @@ const Experience = () => {
           {experiences.map((experience, index) => (
             <ExperienceCard key={index} experience={experience} />
           ))}
+          
+          {/* BOUTON TÉLÉCHARGER CV (Plus pertinent que Notations) */}
           <VerticalTimelineElement
             contentStyle={{
               background: '#eaeaec',
@@ -86,8 +99,8 @@ const Experience = () => {
             icon={
               <div className="flex justify-center items-center w-full h-full">
                 <img
-                  src={resume}
-                  alt="resume"
+                  src={cv}
+                  alt="CV"
                   className="w-[45%] h-[45%] object-contain"
                 />
               </div>
@@ -96,15 +109,15 @@ const Experience = () => {
               className="live-demo flex justify-between
               sm:text-[18px] text-[14px] text-timberWolf
               font-bold font-beckman items-center py-5 pl-3 pr-3
-              whitespace-nowrap gap-1 sm:w-[148px] sm:h-[58px]
-              w-[125px] h-[46px] rounded-[10px] bg-jetLight
+              whitespace-nowrap gap-1 sm:w-[160px] sm:h-[58px]
+              w-[135px] h-[46px] rounded-[10px] bg-jetLight
               sm:mt-[22px] mt-[16px] hover:bg-battleGray
               hover:text-eerieBlack transition duration-[0.2s]
               ease-in-out"
               onClick={() => {
                 const link = document.createElement('a');
-                link.href = notationsPDF;
-                link.download = 'notations.pdf';
+                link.href = cv; 
+                link.download = 'CV_Antoine_Pelamourgues.pdf';
                 document.body.appendChild(link);
                 link.click();
                 document.body.removeChild(link);
@@ -118,8 +131,9 @@ const Experience = () => {
                 document
                   .querySelector('.download-btn')
                   .setAttribute('src', download);
-              }}>
-              NOTATIONS
+              }}
+            >
+              MON CV
               <img
                 src={download}
                 alt="download"
