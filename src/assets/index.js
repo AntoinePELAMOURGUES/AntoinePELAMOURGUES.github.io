@@ -27,20 +27,20 @@ import dbIcon from "./icons/database.png";
 import engIcon from "./icons/engineering.png";
 import leadIcon from "./icons/leadership.png"; 
 
-import css from "./tech/bash.png";
+import bash from "./tech/bash.png";
 import docker from "./tech/docker.png";
-import figma from "./tech/fastapi.png";
+import fastapi from "./tech/fastapi.png";
 import git from "./tech/git.png";
-import html from "./tech/python.png";
-import javascript from "./tech/pandas.png";
-import nodejs from "./tech/jenkins.png";
-import reactjs from "./tech/amazon.png";
-import redux from "./tech/kubernetes.png";
-import tailwind from "./tech/mongodb.png";
-import typescript from "./tech/tensorflow.png";
-import graphql from "./tech/plotly.png";
+import python from "./tech/python.png";
+import pandas from "./tech/pandas.png";
+import jenkins from "./tech/jenkins.png";
+import amazon from "./tech/amazon.png";
+import kubernetes from "./tech/kubernetes.png";
+import dbt from "./tech/dbt.png";
+import tensorflow from "./tech/tensorflow.png";
+import snowflake from "./tech/snowflake.png";
 import postgresql from "./tech/postgresql.png";
-import rubyrails from "./tech/streamlit.png";
+import streamlit from "./tech/streamlit.png";
 
 import coverhunt from "./company/coverhunt.png";
 import dcc from "./company/dcc.png";
@@ -79,20 +79,20 @@ export {
   resume,
   send,
   sendHover,
-  css,
+  bash,
   docker,
-  figma,
+  fastapi,
   git,
-  graphql,
-  html,
-  javascript,
-  nodejs,
+  snowflake,
+  python,
+  pandas,
+  jenkins,
   postgresql,
-  rubyrails,
-  reactjs,
-  redux,
-  tailwind,
-  typescript,
+  streamlit,
+  amazon,
+  kubernetes,
+  dbt,
+  tensorflow,
   komikult,
   leaderboard,
   rakuten,
@@ -107,6 +107,7 @@ export {
   
 
 };
+
 
 
 
