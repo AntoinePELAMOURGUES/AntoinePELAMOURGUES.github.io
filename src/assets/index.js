@@ -57,7 +57,7 @@ import space from "./projects/space-hub.png";
 import telephony from "./projects/telephony.png";
 
 export {
-  cv
+  cv,
   cloudIcon,
   dbIcon,
   engIcon,
@@ -110,6 +110,7 @@ export {
   telephony, 
 
 };
+
 
 
 
